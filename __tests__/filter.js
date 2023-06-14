@@ -40,6 +40,6 @@ describe("filter works correctly", () => {
     filterMock.mockReturnValueOnce(false).mockReturnValueOnce(true);
     const result = filter(tab, filterMock);
     console.log(result); // only b
-    expect(result).toEqual(["b", "c"]);
+    expect(result).toEqual(["b", "c"]); // nope...
   });
 });
